@@ -22,4 +22,7 @@
          result []]
     (if (= x 0)
       result
-      (recur (- x 1) s (+ f s) (conj result s)))))
+      (recur (dec x) s (+ f s) (conj result s)))))
+
+(samplefn solve26)
+(testfn solve26)
